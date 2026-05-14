@@ -82,24 +82,24 @@ The first public role set:
 
 | Avatar | Role | When to use | What it must produce |
 |---|---|---|---|
-| <img src="./assets/agent-portraits/project-scout.svg" width="56" /> | **Project Scout**<br />项目侦察员 | Scan projects, folders, repos, outputs, and status | Inventory, status, duplicates, next action |
+| <img src="./assets/agent-portraits/project-inventory.svg" width="56" /> | **Project Inventory Manager**<br />项目盘点员 | Scan projects, folders, repos, outputs, and status | Inventory, status, duplicates, next action |
 | <img src="./assets/agent-portraits/project-alchemist.svg" width="56" /> | **Project Alchemist**<br />项目结丹师 | Turn project summaries, reviews, and reflections into AgentWorkOS upgrades | Six-layer extraction: Agent, Memory, Skills, MCP, Workflow, Rules |
-| <img src="./assets/agent-portraits/agent-architect.svg" width="56" /> | **Agent Architect**<br />Agent 架构师 | Design role systems, routing, and multi-agent collaboration | Role cards, selection rules, collaboration gates |
-| <img src="./assets/agent-portraits/memory-curator.svg" width="56" /> | **Memory Curator**<br />记忆策展人 | Convert repeated failures and useful threads into durable rules | One-sentence memory, trigger, default behavior |
-| <img src="./assets/agent-portraits/codex-integrator.svg" width="56" /> | **Codex Integrator**<br />Codex 集成师 | Install distilled skills, memories, and rules into local `.codex` | Public source path, local target path, privacy check |
-| <img src="./assets/agent-portraits/release-captain.svg" width="56" /> | **Release Captain**<br />发布船长 | Publish GitHub repos and prepare public proof | Repo URL, README proof, topics, release gaps |
-| <img src="./assets/agent-portraits/quality-auditor.svg" width="56" /> | **Quality Auditor**<br />质量审计官 | Stop hype, check evidence, and find missing artifacts | Findings, missing proof, practical fixes |
+| <img src="./assets/agent-portraits/role-planner.svg" width="56" /> | **Role Planner**<br />角色规划员 | Design role responsibilities, routing, and collaboration rules | Role cards, selection rules, collaboration gates |
+| <img src="./assets/agent-portraits/memory-rule-manager.svg" width="56" /> | **Memory Rule Manager**<br />记忆规则整理员 | Convert repeated failures and useful threads into durable rules | One-sentence memory, trigger, default behavior |
+| <img src="./assets/agent-portraits/codex-setup.svg" width="56" /> | **Codex Setup Manager**<br />Codex 配置员 | Install distilled skills, memories, and rules into local `.codex` | Public source path, local target path, privacy check |
+| <img src="./assets/agent-portraits/release-manager.svg" width="56" /> | **Release Manager**<br />发布负责人 | Publish GitHub repos and prepare public proof | Repo URL, README proof, topics, release gaps |
+| <img src="./assets/agent-portraits/quality-reviewer.svg" width="56" /> | **Quality Reviewer**<br />质量检查员 | Stop hype, check evidence, and find missing artifacts | Findings, missing proof, practical fixes |
 
 Default routing:
 
 | Task | Primary role | Verifier role |
 |---|---|---|
-| Scan a workspace | Project Scout | Quality Auditor |
-| Distill a thread into memory | Memory Curator | Project Alchemist |
-| Build or install a Codex skill | Codex Integrator | Quality Auditor |
-| Publish a GitHub repo | Release Captain | Quality Auditor |
-| Design new Agent roles | Agent Architect | Project Alchemist |
-| Reflect on a stalled project | Project Alchemist | Memory Curator |
+| Scan a workspace | Project Inventory Manager | Quality Reviewer |
+| Distill a thread into memory | Memory Rule Manager | Project Alchemist |
+| Build or install a Codex skill | Codex Setup Manager | Quality Reviewer |
+| Publish a GitHub repo | Release Manager | Quality Reviewer |
+| Design new Agent roles | Role Planner | Project Alchemist |
+| Reflect on a stalled project | Project Alchemist | Memory Rule Manager |
 
 This is the practical meaning of Agent Swarm here: before doing work, choose the right AI co-worker role; after doing work, extract the result back into the operating system.
 

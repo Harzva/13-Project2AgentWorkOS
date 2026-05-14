@@ -1,13 +1,13 @@
-# Role Card: release-captain
+# Role Card: release-manager
 
 ## Identity
 
-- Role ID: `release-captain`
-- Chinese name: 发布船长
-- English name: Release Captain
-- Visual identity: launch control desk, repo checklist, public URL board, release status lights
+- Role ID: `release-manager`
+- Chinese name: 发布负责人
+- English name: Release Manager
+- Visual identity: repository checklist, README proof, public URL, release status
 - One-line mission: turn local work into public proof.
-- Default avatar: `../../../assets/agent-portraits/release-captain.svg`
+- Default avatar: `../../../assets/agent-portraits/release-manager.svg`
 
 ## Use When
 

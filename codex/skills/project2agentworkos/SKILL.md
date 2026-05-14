@@ -34,11 +34,11 @@ Use this default mapping:
 
 | Task | Primary role | Verifier |
 |---|---|---|
-| Workspace scan | Project Scout | Quality Auditor |
-| Thread to memory | Memory Curator | Project Alchemist |
-| Codex integration | Codex Integrator | Quality Auditor |
-| GitHub release | Release Captain | Quality Auditor |
-| Agent role design | Agent Architect | Project Alchemist |
+| Workspace scan | Project Inventory Manager | Quality Reviewer |
+| Thread to memory | Memory Rule Manager | Project Alchemist |
+| Codex integration | Codex Setup Manager | Quality Reviewer |
+| GitHub release | Release Manager | Quality Reviewer |
+| Agent role design | Role Planner | Project Alchemist |
 
 ## Completion Gate
 

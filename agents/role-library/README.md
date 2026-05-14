@@ -17,24 +17,24 @@ Before a task starts, pick the role or role pair that best matches the work. The
 
 | Avatar | Role ID | Chinese name | Best for | Visual identity |
 |---|---|---|---|---|
-| <img src="../../assets/agent-portraits/project-scout.svg" width="48" /> | `project-scout` | 项目侦察员 | Workspace scans, project inventory, status discovery | Explorer / repository compass |
+| <img src="../../assets/agent-portraits/project-inventory.svg" width="48" /> | `project-inventory` | 项目盘点员 | Workspace scans, project inventory, status discovery | Inventory and status table |
 | <img src="../../assets/agent-portraits/project-alchemist.svg" width="48" /> | `project-alchemist` | 项目结丹师 | Project summary, review, reflection, and automatic upgrade into AgentWorkOS assets | Scientist / six-layer crystallization |
-| <img src="../../assets/agent-portraits/agent-architect.svg" width="48" /> | `agent-architect` | Agent 架构师 | Designing role systems and multi-agent workflows | Coder / role architecture |
-| <img src="../../assets/agent-portraits/memory-curator.svg" width="48" /> | `memory-curator` | 记忆策展人 | Extracting durable rules from failures and threads | Teacher / durable knowledge |
-| <img src="../../assets/agent-portraits/codex-integrator.svg" width="48" /> | `codex-integrator` | Codex 集成师 | Installing skills, memories, rules into `.codex` | Mechanic / tool integration |
-| <img src="../../assets/agent-portraits/release-captain.svg" width="48" /> | `release-captain` | 发布船长 | GitHub publish, README proof, release gates | Rocket / release proof |
-| <img src="../../assets/agent-portraits/quality-auditor.svg" width="48" /> | `quality-auditor` | 质量审计官 | Fighting hype, checking proof, finding gaps | Detective / evidence audit |
+| <img src="../../assets/agent-portraits/role-planner.svg" width="48" /> | `role-planner` | 角色规划员 | Designing role responsibilities and collaboration rules | Role table and routing rules |
+| <img src="../../assets/agent-portraits/memory-rule-manager.svg" width="48" /> | `memory-rule-manager` | 记忆规则整理员 | Extracting durable rules from failures and threads | Memory rule card |
+| <img src="../../assets/agent-portraits/codex-setup.svg" width="48" /> | `codex-setup` | Codex 配置员 | Installing skills, memories, rules into `.codex` | Install path and privacy check |
+| <img src="../../assets/agent-portraits/release-manager.svg" width="48" /> | `release-manager` | 发布负责人 | GitHub publish, README proof, release gates | Release checklist |
+| <img src="../../assets/agent-portraits/quality-reviewer.svg" width="48" /> | `quality-reviewer` | 质量检查员 | Fighting hype, checking proof, finding gaps | Evidence checklist |
 
 ## Default Role Pairings
 
 | Task | Primary role | Verifier role |
 |---|---|---|
-| Scan all projects | `project-scout` | `quality-auditor` |
-| Convert a thread into memory | `memory-curator` | `project-alchemist` |
-| Build a reusable skill | `codex-integrator` | `quality-auditor` |
-| Publish a GitHub repo | `release-captain` | `quality-auditor` |
-| Define new Agent roles | `agent-architect` | `project-alchemist` |
-| Run Project2AgentWorkOS on a project | `project-alchemist` | `memory-curator` |
+| Scan all projects | `project-inventory` | `quality-reviewer` |
+| Convert a thread into memory | `memory-rule-manager` | `project-alchemist` |
+| Build a reusable skill | `codex-setup` | `quality-reviewer` |
+| Publish a GitHub repo | `release-manager` | `quality-reviewer` |
+| Define new Agent roles | `role-planner` | `project-alchemist` |
+| Run Project2AgentWorkOS on a project | `project-alchemist` | `memory-rule-manager` |
 
 ## Important Rule
 

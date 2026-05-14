@@ -708,7 +708,7 @@ Project2AgentWorkOS/
   WEEKLY_REVIEW.template.md
   RELEASE_CHECKLIST.md
   agents/
-    project-scout.md
+    project-inventory.md
     delivery-supervisor.md
     memory-archivist.md
   memory/
