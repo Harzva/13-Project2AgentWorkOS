@@ -104,6 +104,12 @@ The first public role set:
 | <img src="./assets/agent-portraits/animated/release-manager.svg" width="56" /> | **Release Manager**<br />发布负责人 | Publish GitHub repos and prepare public proof | Repo URL, README proof, topics, release gaps |
 | <img src="./assets/agent-portraits/animated/quality-reviewer.svg" width="56" /> | **Quality Reviewer**<br />质量检查员 | Stop hype, check evidence, and find missing artifacts | Findings, missing proof, practical fixes |
 
+Agent Swarm GIF preview:
+
+<p align="center">
+  <img src="./docs/readme-assets/agent-swarm.gif" alt="Animated Agent Swarm role selection demo" width="720" />
+</p>
+
 Default routing:
 
 | Task | Primary role | Verifier role |
