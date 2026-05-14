@@ -1,0 +1,13 @@
+# Local outputs
+output/
+tmp/
+*.zip
+*.7z
+*.rar
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
