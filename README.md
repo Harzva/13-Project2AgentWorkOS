@@ -68,6 +68,41 @@ AgentWorkOS = what the human-AI work system remembers, repeats, forbids, and imp
 
 This project uses assistant files and harness tools, but its goal is larger: transfer all projects and threads into a durable work system.
 
+## Agent Swarm
+
+`AgentWorkOS` runs as an **Agent Swarm**: a role library that is selected before execution, not a pile of decorative personas.
+
+For each task, the system chooses:
+
+1. A **primary role** that owns the work.
+2. An optional **verifier role** that checks evidence, release quality, or memory extraction.
+3. A final **crystallization step** that turns useful work back into Agent, Memory, Skills, MCP, Workflow, or Rules.
+
+The first public role set:
+
+| Avatar | Role | When to use | What it must produce |
+|---|---|---|---|
+| <img src="./assets/agent-portraits/project-scout.svg" width="56" /> | **Project Scout**<br />项目侦察员 | Scan projects, folders, repos, outputs, and status | Inventory, status, duplicates, next action |
+| <img src="./assets/agent-portraits/project-alchemist.svg" width="56" /> | **Project Alchemist**<br />项目结丹师 | Turn project summaries, reviews, and reflections into AgentWorkOS upgrades | Six-layer extraction: Agent, Memory, Skills, MCP, Workflow, Rules |
+| <img src="./assets/agent-portraits/agent-architect.svg" width="56" /> | **Agent Architect**<br />Agent 架构师 | Design role systems, routing, and multi-agent collaboration | Role cards, selection rules, collaboration gates |
+| <img src="./assets/agent-portraits/memory-curator.svg" width="56" /> | **Memory Curator**<br />记忆策展人 | Convert repeated failures and useful threads into durable rules | One-sentence memory, trigger, default behavior |
+| <img src="./assets/agent-portraits/codex-integrator.svg" width="56" /> | **Codex Integrator**<br />Codex 集成师 | Install distilled skills, memories, and rules into local `.codex` | Public source path, local target path, privacy check |
+| <img src="./assets/agent-portraits/release-captain.svg" width="56" /> | **Release Captain**<br />发布船长 | Publish GitHub repos and prepare public proof | Repo URL, README proof, topics, release gaps |
+| <img src="./assets/agent-portraits/quality-auditor.svg" width="56" /> | **Quality Auditor**<br />质量审计官 | Stop hype, check evidence, and find missing artifacts | Findings, missing proof, practical fixes |
+
+Default routing:
+
+| Task | Primary role | Verifier role |
+|---|---|---|
+| Scan a workspace | Project Scout | Quality Auditor |
+| Distill a thread into memory | Memory Curator | Project Alchemist |
+| Build or install a Codex skill | Codex Integrator | Quality Auditor |
+| Publish a GitHub repo | Release Captain | Quality Auditor |
+| Design new Agent roles | Agent Architect | Project Alchemist |
+| Reflect on a stalled project | Project Alchemist | Memory Curator |
+
+This is the practical meaning of Agent Swarm here: before doing work, choose the right AI co-worker role; after doing work, extract the result back into the operating system.
+
 ## Core Mission
 
 Most personal AI projects do not fail because of weak ideas. They fail because work traces never become reusable assets:
@@ -106,6 +141,7 @@ This project makes one rule explicit:
 | Long-term memory rules | Drafted |
 | Agent role library | Added |
 | Agent role SVG avatars | Added |
+| Agent Swarm README walkthrough | Added |
 | Local Codex integration package | Added |
 | Local Codex self-install evidence | Added |
 | `.codex` substrate boundary doc | Added |
@@ -118,7 +154,7 @@ This project makes one rule explicit:
 ## How To Use
 
 1. Pick one project, thread, or unfinished idea.
-2. Select a role from `agents/role-library/`.
+2. Select a primary role and optional verifier role from the Agent Swarm.
 3. Fill `templates/PROJECT_CARD.template.md`.
 4. Extract decisions with `templates/THREAD_DISTILLATION.template.md`.
 5. Convert the output into one or more of the six AgentWorkOS layers.
