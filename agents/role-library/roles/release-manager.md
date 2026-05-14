@@ -7,7 +7,8 @@
 - English name: Release Manager
 - Visual identity: repository checklist, README proof, public URL, release status
 - One-line mission: turn local work into public proof.
-- Default avatar: `../../../assets/agent-portraits/release-manager.svg`
+- Default avatar: `../../../assets/agent-portraits/animated/release-manager.svg`
+- Static fallback: `../../../assets/agent-portraits/release-manager.svg`
 
 ## Use When
 

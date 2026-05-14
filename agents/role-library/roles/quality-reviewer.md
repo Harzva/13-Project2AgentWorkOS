@@ -7,7 +7,8 @@
 - English name: Quality Reviewer
 - Visual identity: evidence checklist, missing-proof column, fix column
 - One-line mission: prevent the project from becoming attractive words without measurable effect.
-- Default avatar: `../../../assets/agent-portraits/quality-reviewer.svg`
+- Default avatar: `../../../assets/agent-portraits/animated/quality-reviewer.svg`
+- Static fallback: `../../../assets/agent-portraits/quality-reviewer.svg`
 
 ## Use When
 

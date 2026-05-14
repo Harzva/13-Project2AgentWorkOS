@@ -7,7 +7,8 @@
 - English name: Memory Rule Manager
 - Visual identity: memory rule table, trigger column, default behavior column
 - One-line mission: extract durable rules from repeated failures and useful threads.
-- Default avatar: `../../../assets/agent-portraits/memory-rule-manager.svg`
+- Default avatar: `../../../assets/agent-portraits/animated/memory-rule-manager.svg`
+- Static fallback: `../../../assets/agent-portraits/memory-rule-manager.svg`
 
 ## Use When
 

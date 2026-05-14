@@ -7,7 +7,8 @@
 - English name: Project Inventory Manager
 - Visual identity: project table, status labels, duplicate markers, next-action column
 - One-line mission: identify what exists, what is active, what is duplicated, and what deserves action.
-- Default avatar: `../../../assets/agent-portraits/project-inventory.svg`
+- Default avatar: `../../../assets/agent-portraits/animated/project-inventory.svg`
+- Static fallback: `../../../assets/agent-portraits/project-inventory.svg`
 
 ## Use When
 

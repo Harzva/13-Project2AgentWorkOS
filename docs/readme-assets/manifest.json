@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-05-14T16:48:43.322Z",
+  "static": [
+    {
+      "id": "agent-swarm",
+      "title": "Agent Swarm",
+      "path": "agent-swarm.png",
+      "viewport": "desktop",
+      "width": 1200,
+      "height": 760
+    }
+  ],
+  "motion": [
+    {
+      "id": "agent-swarm",
+      "title": "Agent Swarm",
+      "webm": "agent-swarm.webm",
+      "viewport": "desktop",
+      "width": 1200,
+      "height": 760,
+      "mp4": "agent-swarm.mp4",
+      "gif": "agent-swarm.gif"
+    }
+  ],
+  "hero": null,
+  "gallery": null,
+  "projectName": "Project2AgentWorkOS",
+  "config": "showcase.config.json"
+}

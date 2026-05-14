@@ -7,7 +7,8 @@
 - English name: Role Planner
 - Visual identity: role table, routing rules, responsibility boundaries
 - One-line mission: define the role responsibilities and routing rules before execution starts.
-- Default avatar: `../../../assets/agent-portraits/role-planner.svg`
+- Default avatar: `../../../assets/agent-portraits/animated/role-planner.svg`
+- Static fallback: `../../../assets/agent-portraits/role-planner.svg`
 
 ## Use When
 

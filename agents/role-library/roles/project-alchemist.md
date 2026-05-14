@@ -7,7 +7,8 @@
 - English name: Project Alchemist
 - Visual identity: amber distillation desk, six-layer crystal diagram, precise labels, no fantasy styling
 - One-line mission: turn project summary, review, and reflection into durable AgentWorkOS upgrades.
-- Default avatar: `../../../assets/agent-portraits/project-alchemist.svg`
+- Default avatar: `../../../assets/agent-portraits/animated/project-alchemist.svg`
+- Static fallback: `../../../assets/agent-portraits/project-alchemist.svg`
 
 ## What This Role Means
 

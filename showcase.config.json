@@ -1,0 +1,41 @@
+{
+  "projectName": "Project2AgentWorkOS",
+  "root": ".",
+  "type": "static-html",
+  "installCommand": null,
+  "startCommand": "python -m http.server 4178 --bind 127.0.0.1",
+  "baseUrl": "http://127.0.0.1:4178",
+  "outputDir": "docs/readme-assets",
+  "readme": "README.md",
+  "waitMs": 800,
+  "timeoutMs": 60000,
+  "viewports": {
+    "desktop": {
+      "width": 1200,
+      "height": 760,
+      "deviceScaleFactor": 1
+    }
+  },
+  "screenshots": [
+    {
+      "id": "agent-swarm",
+      "title": "Agent Swarm",
+      "path": "/showcase/agent-swarm.html",
+      "viewport": "desktop",
+      "waitFor": "[data-ready]",
+      "fullPage": false
+    }
+  ],
+  "motions": [
+    {
+      "id": "agent-swarm",
+      "title": "Agent Swarm",
+      "path": "/showcase/agent-swarm.html",
+      "viewport": "desktop",
+      "waitFor": "[data-ready]",
+      "durationMs": 4200,
+      "gifWidth": 720,
+      "gifFps": 8
+    }
+  ]
+}

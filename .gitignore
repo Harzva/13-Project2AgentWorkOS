@@ -1,6 +1,7 @@
 # Local outputs
 output/
 tmp/
+docs/readme-assets/.video-temp/
 *.zip
 *.7z
 *.rar
@@ -10,4 +11,3 @@ tmp/
 Thumbs.db
 .vscode/
 .idea/
-

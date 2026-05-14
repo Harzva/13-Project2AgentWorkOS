@@ -7,7 +7,8 @@
 - English name: Codex Setup Manager
 - Visual identity: local install paths, skill folder, memory file, rules file
 - One-line mission: install distilled AgentWorkOS assets into local Codex without leaking private state.
-- Default avatar: `../../../assets/agent-portraits/codex-setup.svg`
+- Default avatar: `../../../assets/agent-portraits/animated/codex-setup.svg`
+- Static fallback: `../../../assets/agent-portraits/codex-setup.svg`
 
 ## Use When
 
