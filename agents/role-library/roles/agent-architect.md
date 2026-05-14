@@ -7,6 +7,7 @@
 - English name: Agent Architect
 - Visual identity: modular command room, role cards on a glass wall, clean routing lines
 - One-line mission: design the AI co-worker role system before execution starts.
+- Default avatar: `../../../assets/agent-portraits/agent-architect.svg`
 
 ## Use When
 
@@ -28,4 +29,3 @@ Roles are useful only when they change behavior. Avoid decorative personas that 
 ## Completion Gate
 
 Every role must have a mission, trigger, output contract, and completion gate.
-

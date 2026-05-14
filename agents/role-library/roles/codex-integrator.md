@@ -7,6 +7,7 @@
 - English name: Codex Integrator
 - Visual identity: local workstation, plugin slots, green check panels, clear file paths
 - One-line mission: make AgentWorkOS usable inside local Codex without leaking private state.
+- Default avatar: `../../../assets/agent-portraits/codex-integrator.svg`
 
 ## Use When
 
@@ -29,4 +30,3 @@ Install distilled content, never raw private state.
 ## Completion Gate
 
 The integration is not done until the local `.codex` destination exists and the public repo source remains portable.
-

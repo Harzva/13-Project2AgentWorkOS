@@ -105,6 +105,7 @@ This project makes one rule explicit:
 | OPC Agent role system | Drafted |
 | Long-term memory rules | Drafted |
 | Agent role library | Added |
+| Agent role SVG avatars | Added |
 | Local Codex integration package | Added |
 | Local Codex self-install evidence | Added |
 | `.codex` substrate boundary doc | Added |

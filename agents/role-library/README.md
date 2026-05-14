@@ -15,15 +15,15 @@ Before a task starts, pick the role or role pair that best matches the work. The
 
 ## Role Library
 
-| Role ID | Chinese name | Best for | Visual identity |
-|---|---|---|---|
-| `project-scout` | 项目侦察员 | Workspace scans, project inventory, status discovery | Blue field jacket, map board, repository compass |
-| `project-alchemist` | 项目结丹师 | Project summary, review, reflection, and automatic upgrade into AgentWorkOS assets | Amber distillation desk, six-layer crystal diagram |
-| `agent-architect` | Agent 架构师 | Designing role systems and multi-agent workflows | Modular command room, role cards on glass wall |
-| `memory-curator` | 记忆策展人 | Extracting durable rules from failures and threads | Quiet archive desk, rule cards, timeline wall |
-| `codex-integrator` | Codex 集成师 | Installing skills, memories, rules into `.codex` | Local workstation, plugin slots, green check panels |
-| `release-captain` | 发布船长 | GitHub publish, README proof, release gates | Launch control desk, repo checklist, public URL board |
-| `quality-auditor` | 质量审计官 | Fighting hype, checking proof, finding gaps | Clean audit table, red/green evidence stamps |
+| Avatar | Role ID | Chinese name | Best for | Visual identity |
+|---|---|---|---|---|
+| <img src="../../assets/agent-portraits/project-scout.svg" width="48" /> | `project-scout` | 项目侦察员 | Workspace scans, project inventory, status discovery | Explorer / repository compass |
+| <img src="../../assets/agent-portraits/project-alchemist.svg" width="48" /> | `project-alchemist` | 项目结丹师 | Project summary, review, reflection, and automatic upgrade into AgentWorkOS assets | Scientist / six-layer crystallization |
+| <img src="../../assets/agent-portraits/agent-architect.svg" width="48" /> | `agent-architect` | Agent 架构师 | Designing role systems and multi-agent workflows | Coder / role architecture |
+| <img src="../../assets/agent-portraits/memory-curator.svg" width="48" /> | `memory-curator` | 记忆策展人 | Extracting durable rules from failures and threads | Teacher / durable knowledge |
+| <img src="../../assets/agent-portraits/codex-integrator.svg" width="48" /> | `codex-integrator` | Codex 集成师 | Installing skills, memories, rules into `.codex` | Mechanic / tool integration |
+| <img src="../../assets/agent-portraits/release-captain.svg" width="48" /> | `release-captain` | 发布船长 | GitHub publish, README proof, release gates | Rocket / release proof |
+| <img src="../../assets/agent-portraits/quality-auditor.svg" width="48" /> | `quality-auditor` | 质量审计官 | Fighting hype, checking proof, finding gaps | Detective / evidence audit |
 
 ## Default Role Pairings
 
