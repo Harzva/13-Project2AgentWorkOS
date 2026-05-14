@@ -1,0 +1,20 @@
+# Codex Integration
+
+This folder contains public-safe AgentWorkOS components that can be installed into local `.codex`.
+
+It exists to prove the project works on itself.
+
+## What Can Be Installed
+
+| Source path | Local Codex target | Purpose |
+|---|---|---|
+| `codex/skills/project2agentworkos/` | `<codex-home>/skills/project2agentworkos/` | Trigger Project2AgentWorkOS workflows inside Codex |
+| `codex/memories/project2agentworkos.md` | `<codex-home>/memories/project2agentworkos.md` | Durable behavior rule |
+| `codex/rules/project2agentworkos.rules` | `<codex-home>/rules/project2agentworkos.rules` | Public-safe execution preference notes |
+
+## Boundary
+
+Do not copy raw sessions, auth files, sqlite databases, or private config into this repository.
+
+Only copy distilled content that can safely become public.
+

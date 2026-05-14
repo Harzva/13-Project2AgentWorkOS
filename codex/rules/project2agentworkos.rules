@@ -1,0 +1,10 @@
+# Project2AgentWorkOS public-safe local rules
+
+# This file is intentionally descriptive. It records local operating preferences
+# without credentials, private paths, or raw session data.
+
+project2agentworkos.role_selection = "Before project/thread/failure tasks, choose an Agent role and state it briefly."
+project2agentworkos.extract_layers = "End useful work by extracting Agent, Memory, Skills, MCP, Workflow, or Rules."
+project2agentworkos.no_raw_private_state = "Do not publish raw Codex sessions, auth files, sqlite databases, or private config."
+project2agentworkos.no_hype_without_artifact = "Public claims need an artifact: README, template, skill, memory, release, diagram, or URL."
+

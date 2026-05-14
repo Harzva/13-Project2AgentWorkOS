@@ -91,7 +91,9 @@ This project makes one rule explicit:
 | `assets/` | Visual diagrams and README images |
 | `docs/` | Failure review, project scans, strategy documents |
 | `agents/` | AI co-worker role system |
+| `agents/role-library/` | Role cards selected before execution |
 | `memory/` | Long-term operating rules |
+| `codex/` | Public-safe Codex skill, memory, and rule adapters |
 | `templates/` | Repeatable project, thread, release, and weekly review templates |
 
 ## Current Artifacts
@@ -102,6 +104,10 @@ This project makes one rule explicit:
 | Codex thread scan summary | Drafted |
 | OPC Agent role system | Drafted |
 | Long-term memory rules | Drafted |
+| Agent role library | Added |
+| Local Codex integration package | Added |
+| Local Codex self-install evidence | Added |
+| `.codex` substrate boundary doc | Added |
 | Concept map image | Added to README |
 | Project card template | Added |
 | Thread distillation template | Added |
@@ -111,13 +117,40 @@ This project makes one rule explicit:
 ## How To Use
 
 1. Pick one project, thread, or unfinished idea.
-2. Fill `templates/PROJECT_CARD.template.md`.
-3. Extract decisions with `templates/THREAD_DISTILLATION.template.md`.
-4. Convert the output into one or more of the six AgentWorkOS layers.
-5. Use `templates/RELEASE_CHECKLIST.md` before publishing.
-6. End each week with `templates/WEEKLY_REVIEW.template.md`.
+2. Select a role from `agents/role-library/`.
+3. Fill `templates/PROJECT_CARD.template.md`.
+4. Extract decisions with `templates/THREAD_DISTILLATION.template.md`.
+5. Convert the output into one or more of the six AgentWorkOS layers.
+6. Use `templates/RELEASE_CHECKLIST.md` before publishing.
+7. End each week with `templates/WEEKLY_REVIEW.template.md`.
 
 The goal is not to create more documents. The goal is to stop losing useful work.
+
+## Self-Experiment First
+
+This project must prove itself on the author's own workspace before making broad claims.
+
+Current self-experiment evidence:
+
+- Personal project failure review is open-sourced in `docs/`.
+- Repeated failures are distilled into `memory/`.
+- AI co-worker roles are distilled into `agents/role-library/`.
+- A portable Codex skill is prepared in `codex/skills/project2agentworkos/`.
+- Public-safe Codex memory and rules are prepared in `codex/memories/` and `codex/rules/`.
+- The Codex package has been installed back into the author's local `.codex` as a self-experiment.
+- Raw `.codex` state is not published; only distilled content is published.
+
+## Local Codex Usage
+
+`Project2AgentWorkOS` can be installed into local Codex as a skill/memory/rule set:
+
+| Public source | Local target |
+|---|---|
+| `codex/skills/project2agentworkos/` | `<codex-home>/skills/project2agentworkos/` |
+| `codex/memories/project2agentworkos.md` | `<codex-home>/memories/project2agentworkos.md` |
+| `codex/rules/project2agentworkos.rules` | `<codex-home>/rules/project2agentworkos.rules` |
+
+See [Codex Substrate And AgentWorkOS](./docs/CODEX_SUBSTRATE_AND_AGENTWORKOS.md) for the boundary between `.codex` and `AgentWorkOS`.
 
 ## The Transfer Rule
 
@@ -135,10 +168,14 @@ All projects + all threads + all failures + all half-finished assets
 - Convert high-frequency failures into `memory/`.
 - Convert repeated assistant behaviors into `agents/`.
 - Convert repeatable workflows into `templates/` and future `skills/`.
+- Use this repository's own `codex/` package inside local Codex.
 - Publish a clear GitHub README before adding more features.
 
 ## Related Documents
 
 - [Workspace Failure Review](./docs/PROJECT_FAILURE_REVIEW_AND_OPC_AGENT_SYSTEM.md)
 - [OPC Agent Role System](./agents/OPC_AGENT_ROLE_SYSTEM.md)
+- [Agent Role Library](./agents/role-library/README.md)
 - [Long-Term Memory Rules](./memory/OPC_LONG_TERM_MEMORY_RULES.md)
+- [Codex Substrate And AgentWorkOS](./docs/CODEX_SUBSTRATE_AND_AGENTWORKOS.md)
+- [Self-Experiment Log](./docs/SELF_EXPERIMENT_LOG.md)
