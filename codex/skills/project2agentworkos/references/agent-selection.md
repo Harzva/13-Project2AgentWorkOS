@@ -5,7 +5,7 @@ Pick roles by the work's failure risk.
 | Failure risk | Role to use |
 |---|---|
 | Unknown project state | Project Scout |
-| Too many ideas, no closure | Product Alchemist |
+| Too many ideas, no closure | Project Alchemist |
 | Role system is unclear | Agent Architect |
 | Useful thread may be forgotten | Memory Curator |
 | Local `.codex` install or skill work | Codex Integrator |
@@ -15,7 +15,6 @@ Pick roles by the work's failure risk.
 When in doubt, use:
 
 ```text
-Primary: Product Alchemist
+Primary: Project Alchemist
 Verifier: Quality Auditor
 ```
-

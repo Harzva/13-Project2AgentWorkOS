@@ -1,4 +1,4 @@
-# 13-Project2AgentWorkOS: Transfer All Projects and Threads into AgentWorkOS
+# Project2AgentWorkOS: Transfer All Projects and Threads into AgentWorkOS
 
 > Turn every project, Codex thread, failure review, half-finished idea, README, codebase, and output asset into a reusable personal AI co-worker work operating system.
 >
@@ -10,7 +10,7 @@
 
 ## What This Is
 
-`13-Project2AgentWorkOS` is the repository name. `Project2AgentWorkOS` is the method inside it.
+`Project2AgentWorkOS` is the public repository name and the method name. A local folder may use a numeric prefix such as `13-Project2AgentWorkOS` only for personal workspace sorting.
 
 `Project2AgentWorkOS` is not a forced name for "another OS".
 

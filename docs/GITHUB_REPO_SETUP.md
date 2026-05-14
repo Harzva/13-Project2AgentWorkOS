@@ -3,13 +3,13 @@
 ## Repository Name
 
 ```text
-13-Project2AgentWorkOS
+Project2AgentWorkOS
 ```
 
 ## README Title
 
 ```text
-13-Project2AgentWorkOS: Transfer All Projects and Threads into AgentWorkOS
+Project2AgentWorkOS: Transfer All Projects and Threads into AgentWorkOS
 ```
 
 ## GitHub Description

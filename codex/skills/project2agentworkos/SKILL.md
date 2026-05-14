@@ -35,10 +35,10 @@ Use this default mapping:
 | Task | Primary role | Verifier |
 |---|---|---|
 | Workspace scan | Project Scout | Quality Auditor |
-| Thread to memory | Memory Curator | Product Alchemist |
+| Thread to memory | Memory Curator | Project Alchemist |
 | Codex integration | Codex Integrator | Quality Auditor |
 | GitHub release | Release Captain | Quality Auditor |
-| Agent role design | Agent Architect | Product Alchemist |
+| Agent role design | Agent Architect | Project Alchemist |
 
 ## Completion Gate
 
@@ -57,4 +57,3 @@ A Project2AgentWorkOS task is incomplete until at least one of these exists:
 
 - Read `references/agent-selection.md` when role choice is non-obvious.
 - Read `references/codex-substrate.md` when the task involves local `.codex` usage or privacy boundaries.
-
