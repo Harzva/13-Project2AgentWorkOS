@@ -25,6 +25,7 @@
 | MCP |  |
 | Workflow |  |
 | Rules |  |
+| Hooks |  |
 
 ## Failure Signals
 
@@ -41,5 +42,5 @@
 - Convert to memory:
 - Convert to skill:
 - Convert to checklist:
+- Convert to hook candidate:
 - Merge into another project:
-

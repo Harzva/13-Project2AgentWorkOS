@@ -26,6 +26,7 @@
 - New MCP/tool need:
 - New Workflow:
 - New Rule:
+- New Hook candidate:
 
 ## Stop Doing
 
@@ -39,4 +40,3 @@
 - [ ] 
 - [ ] 
 - [ ] 
-

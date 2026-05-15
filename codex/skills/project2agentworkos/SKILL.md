@@ -1,6 +1,6 @@
 ---
 name: project2agentworkos
-description: Use when converting projects, Codex threads, failure reviews, half-finished ideas, README/code/output assets, or repeated workflow problems into AgentWorkOS assets: Agent roles, Memory rules, Skills, MCP/tool needs, Workflows, and hard Rules. Also use when selecting an Agent role before a task or integrating distilled content into local Codex.
+description: "Use when converting projects, Codex threads, failure reviews, half-finished ideas, README/code/output assets, or repeated workflow problems into AgentWorkOS assets: Agent roles, Memory rules, Skills, MCP/tool needs, Workflows, hard Rules, and Hooks. Also use when selecting an Agent role before a task or integrating distilled content into local Codex."
 ---
 
 # Project2AgentWorkOS
@@ -15,7 +15,7 @@ Do not only summarize. Extract future operating capability.
 projects + threads + failures + half-finished work
 -> Project2AgentWorkOS
 -> AgentWorkOS
--> Agent + Memory + Skills + MCP + Workflow + Rules
+-> Agent + Memory + Skills + MCP + Workflow + Rules + Hooks
 ```
 
 ## Workflow
@@ -24,8 +24,8 @@ projects + threads + failures + half-finished work
 2. If risk is high, select a verifier role.
 3. Inspect the project/thread/file evidence.
 4. Classify the work: Active / Watch / Archive / Reference.
-5. Extract into the six AgentWorkOS layers.
-6. Create or update a durable artifact: role card, memory, skill, checklist, template, release proof, or rule.
+5. Extract into the seven AgentWorkOS layers.
+6. Create or update a durable artifact: role card, memory, skill, checklist, template, release proof, rule, or hook-ready discipline.
 7. Avoid raw private exports. Publish distilled content only.
 
 ## Role Selection
@@ -50,6 +50,7 @@ A Project2AgentWorkOS task is incomplete until at least one of these exists:
 - an MCP/tool requirement
 - a workflow/checklist/template
 - a hard rule
+- a hook candidate or lifecycle check
 - public release evidence
 - an explicit archive decision
 

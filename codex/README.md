@@ -11,10 +11,10 @@ It exists to prove the project works on itself.
 | `codex/skills/project2agentworkos/` | `<codex-home>/skills/project2agentworkos/` | Trigger Project2AgentWorkOS workflows inside Codex |
 | `codex/memories/project2agentworkos.md` | `<codex-home>/memories/project2agentworkos.md` | Durable behavior rule |
 | `codex/rules/project2agentworkos.rules` | `<codex-home>/rules/project2agentworkos.rules` | Public-safe execution preference notes |
+| `docs/HOOKS_AND_AGENTWORKOS.md` | hook design reference | Hook candidates and lifecycle discipline before any local hook is installed |
 
 ## Boundary
 
 Do not copy raw sessions, auth files, sqlite databases, or private config into this repository.
 
 Only copy distilled content that can safely become public.
-

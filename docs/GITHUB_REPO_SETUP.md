@@ -15,7 +15,7 @@ Project2AgentWorkOS: Transfer All Projects and Threads into AgentWorkOS
 ## GitHub Description
 
 ```text
-Transfer all projects, Codex threads, failure reviews, and half-finished ideas into AgentWorkOS: Agents, Memory, Skills, MCP, Workflow, and Rules.
+Transfer all projects, Codex threads, failure reviews, and half-finished ideas into AgentWorkOS: Agents, Memory, Skills, MCP, Workflow, Rules, and Hooks.
 ```
 
 ## Topics
@@ -30,6 +30,7 @@ memory
 skills
 mcp
 workflow
+hooks
 operating-system
 ```
 
@@ -50,7 +51,7 @@ All projects + all threads + all failures + all half-finished work
 `AgentWorkOS` means a personal AI co-worker work operating system made of:
 
 ```text
-Agent + Memory + Skills + MCP + Workflow + Rules
+Agent + Memory + Skills + MCP + Workflow + Rules + Hooks
 ```
 
 ## Reader Objection Answer
@@ -58,5 +59,5 @@ Agent + Memory + Skills + MCP + Workflow + Rules
 If someone asks, "Isn't this just what people put in Claude files?", answer:
 
 ```text
-Claude/Codex files are storage surfaces. Harness engineering is the execution layer. AgentWorkOS is the operating layer that decides which agents exist, what memories survive, which skills are reusable, which tools connect, what workflow projects follow, and which rules prevent repeated failures.
+Claude/Codex files are storage surfaces. Harness engineering is the execution layer. AgentWorkOS is the operating layer that decides which agents exist, what memories survive, which skills are reusable, which tools connect, what workflow projects follow, which rules prevent repeated failures, and which hooks make key checks run automatically.
 ```

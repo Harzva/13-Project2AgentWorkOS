@@ -46,4 +46,4 @@
 | MCP | What tool connection was missing? |
 | Workflow | What step should become standard? |
 | Rules | What mistake must not repeat? |
-
+| Hooks | What lifecycle check should become automatic? |

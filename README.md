@@ -38,18 +38,19 @@ It is a method and repository for converting **all real work traces** into `Agen
 | Half-finished ideas | OPC loop | MCP |
 | README / code / docs | Project cards | Workflow |
 | Output assets | Release reviews | Rules |
+| Repeated discipline gaps | Lifecycle automation | Hooks |
 
 In one sentence:
 
 ```text
-Project2AgentWorkOS transfers all projects, threads, failures, and unfinished work into AgentWorkOS: Agents, Memory, Skills, MCP, Workflow, and Rules.
+Project2AgentWorkOS transfers all projects, threads, failures, and unfinished work into AgentWorkOS: Agents, Memory, Skills, MCP, Workflow, Rules, and Hooks.
 ```
 
 ## Why It Is Called AgentWorkOS
 
 `AgentWorkOS` means **AI co-worker work operating system**.
 
-It is not an Agent runtime, not a replacement for AgentOS frameworks, and not just a project management note. The `OS` here means a reusable work system with six layers:
+It is not an Agent runtime, not a replacement for AgentOS frameworks, and not just a project management note. The `OS` here means a reusable work system with seven layers:
 
 | Layer | Meaning |
 |---|---|
@@ -59,6 +60,15 @@ It is not an Agent runtime, not a replacement for AgentOS frameworks, and not ju
 | MCP | Which tools and connectors each Agent needs |
 | Workflow | How projects move from idea to release |
 | Rules | Which mistakes must never repeat |
+| Hooks | Which lifecycle checks must run automatically |
+
+In short:
+
+```text
+AgentWorkOS = Agents + Memory + Skills + MCP + Workflow + Rules + Hooks
+```
+
+Hook is the key layer that moves AgentWorkOS from a knowledge system toward an execution system.
 
 `Project2AgentWorkOS` is the refinery. `AgentWorkOS` is the operating system produced by that refinery.
 
@@ -70,14 +80,14 @@ Short answer: no. Claude/Codex files and harness engineering are important parts
 |---|---|---|
 | Assistant files | Store instructions for one assistant or one repo | `CLAUDE.md`, `AGENTS.md`, Codex memories |
 | Harness engineering | Runs agents and tools in a controlled execution environment | CLI, MCP, sandbox, browser, GitHub, shell |
-| AgentWorkOS | Defines how all project experience becomes reusable work capability | Agent roles, memory rules, skills, workflows, release gates |
+| AgentWorkOS | Defines how all project experience becomes reusable work capability | Agent roles, memory rules, skills, workflows, release gates, lifecycle hooks |
 
 So the boundary is:
 
 ```text
 Claude/Codex files = where some rules live
 Harness engineering = how agents execute work
-AgentWorkOS = what the human-AI work system remembers, repeats, forbids, and improves
+AgentWorkOS = what the human-AI work system remembers, repeats, forbids, automates, and improves
 ```
 
 This project uses assistant files and harness tools, but its goal is larger: transfer all projects and threads into a durable work system.
@@ -90,14 +100,14 @@ For each task, the system chooses:
 
 1. A **primary role** that owns the work.
 2. An optional **verifier role** that checks evidence, release quality, or memory extraction.
-3. A final **crystallization step** that turns useful work back into Agent, Memory, Skills, MCP, Workflow, or Rules.
+3. A final **crystallization step** that turns useful work back into Agent, Memory, Skills, MCP, Workflow, Rules, or Hooks.
 
 The first public role set:
 
 | Avatar | Role | When to use | What it must produce |
 |---|---|---|---|
 | <img src="./assets/agent-portraits/animated/project-inventory.svg" width="56" /> | **Project Inventory Manager**<br />项目盘点员 | Scan projects, folders, repos, outputs, and status | Inventory, status, duplicates, next action |
-| <img src="./assets/agent-portraits/animated/project-alchemist.svg" width="56" /> | **Project Alchemist**<br />项目结丹师 | Turn project summaries, reviews, and reflections into AgentWorkOS upgrades | Six-layer extraction: Agent, Memory, Skills, MCP, Workflow, Rules |
+| <img src="./assets/agent-portraits/animated/project-alchemist.svg" width="56" /> | **Project Alchemist**<br />项目结丹师 | Turn project summaries, reviews, and reflections into AgentWorkOS upgrades | Seven-layer extraction: Agent, Memory, Skills, MCP, Workflow, Rules, Hooks |
 | <img src="./assets/agent-portraits/animated/role-planner.svg" width="56" /> | **Role Planner**<br />角色规划员 | Design role responsibilities, routing, and collaboration rules | Role cards, selection rules, collaboration gates |
 | <img src="./assets/agent-portraits/animated/memory-rule-manager.svg" width="56" /> | **Memory Rule Manager**<br />记忆规则整理员 | Convert repeated failures and useful threads into durable rules | One-sentence memory, trigger, default behavior |
 | <img src="./assets/agent-portraits/animated/codex-setup.svg" width="56" /> | **Codex Setup Manager**<br />Codex 配置员 | Install distilled skills, memories, and rules into local `.codex` | Public source path, local target path, privacy check |
@@ -151,6 +161,7 @@ This project makes one rule explicit:
 | `agents/role-library/` | Role cards selected before execution |
 | `memory/` | Long-term operating rules |
 | `codex/` | Public-safe Codex skill, memory, and rule adapters |
+| `docs/HOOKS_AND_AGENTWORKOS.md` | Hook boundary and execution-discipline model |
 | `templates/` | Repeatable project, thread, release, and weekly review templates |
 
 ## Current Artifacts
@@ -168,6 +179,7 @@ This project makes one rule explicit:
 | Local Codex integration package | Added |
 | Local Codex self-install evidence | Added |
 | `.codex` substrate boundary doc | Added |
+| Hook boundary doc | Added |
 | Concept map image | Added to README |
 | Project card template | Added |
 | Thread distillation template | Added |
@@ -180,7 +192,7 @@ This project makes one rule explicit:
 2. Select a primary role and optional verifier role from the Agent Swarm.
 3. Fill `templates/PROJECT_CARD.template.md`.
 4. Extract decisions with `templates/THREAD_DISTILLATION.template.md`.
-5. Convert the output into one or more of the six AgentWorkOS layers.
+5. Convert the output into one or more of the seven AgentWorkOS layers.
 6. Use `templates/RELEASE_CHECKLIST.md` before publishing.
 7. End each week with `templates/WEEKLY_REVIEW.template.md`.
 
@@ -228,6 +240,7 @@ All projects + all threads + all failures + all half-finished assets
 - Convert high-frequency failures into `memory/`.
 - Convert repeated assistant behaviors into `agents/`.
 - Convert repeatable workflows into `templates/` and future `skills/`.
+- Convert repeated lifecycle checks into `hooks/` or hook-ready rules.
 - Use this repository's own `codex/` package inside local Codex.
 - Publish a clear GitHub README before adding more features.
 
@@ -238,4 +251,5 @@ All projects + all threads + all failures + all half-finished assets
 - [Agent Role Library](./agents/role-library/README.md)
 - [Long-Term Memory Rules](./memory/OPC_LONG_TERM_MEMORY_RULES.md)
 - [Codex Substrate And AgentWorkOS](./docs/CODEX_SUBSTRATE_AND_AGENTWORKOS.md)
+- [Hooks And AgentWorkOS](./docs/HOOKS_AND_AGENTWORKOS.md)
 - [Self-Experiment Log](./docs/SELF_EXPERIMENT_LOG.md)

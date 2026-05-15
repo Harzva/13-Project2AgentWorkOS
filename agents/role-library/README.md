@@ -11,14 +11,14 @@ Before a task starts, pick the role or role pair that best matches the work. The
 3. Select one verifier role when the work has public, financial, architectural, or release risk.
 4. State the selected role briefly before execution.
 5. Execute the task using that role's standards.
-6. End by extracting any new Agent, Memory, Skill, MCP, Workflow, or Rule.
+6. End by extracting any new Agent, Memory, Skill, MCP, Workflow, Rule, or Hook.
 
 ## Role Library
 
 | Avatar | Role ID | Chinese name | Best for | Visual identity |
 |---|---|---|---|---|
 | <img src="../../assets/agent-portraits/project-inventory.svg" width="48" /> | `project-inventory` | 项目盘点员 | Workspace scans, project inventory, status discovery | Inventory and status table |
-| <img src="../../assets/agent-portraits/project-alchemist.svg" width="48" /> | `project-alchemist` | 项目结丹师 | Project summary, review, reflection, and automatic upgrade into AgentWorkOS assets | Scientist / six-layer crystallization |
+| <img src="../../assets/agent-portraits/project-alchemist.svg" width="48" /> | `project-alchemist` | 项目结丹师 | Project summary, review, reflection, and automatic upgrade into AgentWorkOS assets | Scientist / seven-layer crystallization |
 | <img src="../../assets/agent-portraits/role-planner.svg" width="48" /> | `role-planner` | 角色规划员 | Designing role responsibilities and collaboration rules | Role table and routing rules |
 | <img src="../../assets/agent-portraits/memory-rule-manager.svg" width="48" /> | `memory-rule-manager` | 记忆规则整理员 | Extracting durable rules from failures and threads | Memory rule card |
 | <img src="../../assets/agent-portraits/codex-setup.svg" width="48" /> | `codex-setup` | Codex 配置员 | Installing skills, memories, rules into `.codex` | Install path and privacy check |

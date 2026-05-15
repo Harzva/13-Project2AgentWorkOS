@@ -6,7 +6,7 @@
 
 `.codex` is the local Codex substrate: it stores configuration, sessions, memories, skills, rules, plugins, caches, generated images, auth state, and local databases.
 
-`AgentWorkOS` is the operating layer above it: it decides which Agent roles exist, what memories survive, which skills become reusable, which tools connect, what workflow every project follows, and which rules prevent repeated failures.
+`AgentWorkOS` is the operating layer above it: it decides which Agent roles exist, what memories survive, which skills become reusable, which tools connect, what workflow every project follows, which rules prevent repeated failures, and which hooks enforce execution discipline.
 
 ## Local `.codex` Map
 
@@ -17,6 +17,7 @@
 | `memories/` | Durable memory notes | Yes, after removing private paths/secrets | One host for AgentWorkOS Memory |
 | `skills/` | Local Codex skills | Yes, when written as portable skills | One host for AgentWorkOS Skills |
 | `rules/` | Local allow/deny or execution rules | Yes, when generic and safe | One host for AgentWorkOS Rules |
+| `hooks/` or hook config | Lifecycle automation around tool use, permissions, and stop conditions | Yes, only generic audited hooks | One host for AgentWorkOS Hooks |
 | `plugins/` and `cache/` | Installed plugin/marketplace code and metadata | Usually no | Tool/runtime substrate |
 | `generated_images/` | Generated bitmap assets | Yes, selected outputs only | Visual proof and Agent role identity assets |
 | `auth.json`, `accounts/`, sqlite DBs | Credentials and local state | Never | Private runtime state |
@@ -31,6 +32,7 @@
 - Which MCP/tool connections are required for this role?
 - What release evidence must exist before calling the project done?
 - Which mistakes are hard rules, not optional suggestions?
+- Which checks should run automatically before tools, after tools, or before stopping?
 
 Those decisions live in `AgentWorkOS`.
 
@@ -52,6 +54,7 @@ Publish:
 - Memory rules after privacy cleanup
 - portable Codex skills
 - reusable project/thread/release templates
+- hook candidates and audited hook rules
 - workflow diagrams and public docs
 
 Do not publish:
@@ -62,4 +65,3 @@ Do not publish:
 - private account config
 - absolute machine paths
 - token or credential material
-

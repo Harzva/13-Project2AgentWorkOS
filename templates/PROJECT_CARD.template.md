@@ -32,6 +32,7 @@
 | MCP |  |
 | Workflow |  |
 | Rules |  |
+| Hooks |  |
 
 ## Release Proof
 
@@ -40,4 +41,3 @@
 - Demo or Pages:
 - Release artifact:
 - Post-release review:
-

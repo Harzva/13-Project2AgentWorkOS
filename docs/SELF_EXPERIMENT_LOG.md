@@ -33,7 +33,6 @@ personal projects + Codex threads + failure review
 
 ### Boundary Confirmed
 
-`.codex` is the local substrate. It can host AgentWorkOS pieces such as skills, memories, and rules.
+`.codex` is the local substrate. It can host AgentWorkOS pieces such as skills, memories, rules, and hooks.
 
-`AgentWorkOS` is broader: it also includes role selection, release evidence, project cards, public docs, workflow gates, and the habit of turning work traces into reusable assets.
-
+`AgentWorkOS` is broader: it also includes role selection, release evidence, project cards, public docs, workflow gates, hook candidates, and the habit of turning work traces into reusable assets.

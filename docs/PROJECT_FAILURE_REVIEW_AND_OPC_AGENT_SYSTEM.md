@@ -65,7 +65,7 @@
 
 | 层级 | 推荐名称 | 含义 |
 |---|---|---|
-| 萃取过程 / 仓库名 | `Project2AgentWorkOS` | 从项目资产中提炼出 Agent、Memory、Skills、MCP、Workflow、Rules |
+| 萃取过程 / 仓库名 | `Project2AgentWorkOS` | 从项目资产中提炼出 Agent、Memory、Skills、MCP、Workflow、Rules、Hooks |
 | 最终系统 / 产物名 | `AgentWorkOS` | 个人 AI 工友工作操作系统 |
 | 子工作流模块 | `ProjectLoop` | 项目从启动、交付、发布、复盘到记忆沉淀的闭环 |
 
@@ -84,7 +84,7 @@ Project2AgentWorkOS
 一句话定位：
 
 ```text
-Project2AgentWorkOS 是一套把散乱项目、历史对话、失败经验和半成品，结丹为 Agent、Memory、Skills、MCP、Workflow 和 Rules 的个人 AI 工作系统生成方法。
+Project2AgentWorkOS 是一套把散乱项目、历史对话、失败经验和半成品，结丹为 Agent、Memory、Skills、MCP、Workflow、Rules 和 Hooks 的个人 AI 工作系统生成方法。
 ```
 
 推荐原因：
@@ -108,7 +108,7 @@ Project2AgentWorkOS 是一套把散乱项目、历史对话、失败经验和半
 建议实际仓库描述：
 
 ```text
-Distill scattered projects, AI conversations, failures, and half-finished ideas into a personal Agent Work OS: Agents, Memory, Skills, MCP tools, Workflows, and Rules.
+Distill scattered projects, AI conversations, failures, and half-finished ideas into a personal Agent Work OS: Agents, Memory, Skills, MCP tools, Workflows, Rules, and Hooks.
 ```
 
 ## 3. 项目总览表
@@ -646,7 +646,7 @@ Distill scattered projects, AI conversations, failures, and half-finished ideas 
 
 ## 10. 一句话记忆收纳格
 
-我的项目停滞通常不是因为想法少或能力弱，而是因为启动太快、版本太多、状态不落盘、发布不成闭环；未来每个想法都必须进入 Project2AgentWorkOS 的萃取流程：先用项目卡片判断机会，再做 7 天内可交付的最小版本，最后发布、分发、复盘，并把经验沉淀成 Agent、Memory、Skills、MCP、Workflow 和 Rules。
+我的项目停滞通常不是因为想法少或能力弱，而是因为启动太快、版本太多、状态不落盘、发布不成闭环；未来每个想法都必须进入 Project2AgentWorkOS 的萃取流程：先用项目卡片判断机会，再做 7 天内可交付的最小版本，最后发布、分发、复盘，并把经验沉淀成 Agent、Memory、Skills、MCP、Workflow、Rules 和 Hooks。
 
 ## 11. 未来 7 天行动清单
 
@@ -660,7 +660,7 @@ Distill scattered projects, AI conversations, failures, and half-finished ideas 
 ### Day 2：建立 Project2AgentWorkOS 仓库骨架
 
 - [ ] 用 `Project2AgentWorkOS` 作为新仓库名。
-- [ ] 写 README：项目如何炼成 AgentWorkOS、OPC、Agent/Memory/Skills/MCP/Workflow/Rules。
+- [ ] 写 README：项目如何炼成 AgentWorkOS、OPC、Agent/Memory/Skills/MCP/Workflow/Rules/Hooks。
 - [ ] 把本报告、Agent 角色、Memory 规则放入仓库。
 - [ ] 加 `PROJECT_CARD.template.md`、`RELEASE_CHECKLIST.md`、`WEEKLY_REVIEW.md`。
 

@@ -17,6 +17,7 @@
 - [ ] MCP/tool needs listed.
 - [ ] Workflow documented.
 - [ ] Non-repeatable mistakes turned into rules.
+- [ ] Repeated lifecycle checks turned into hook candidates.
 
 ## Public Proof
 
@@ -25,4 +26,3 @@
 - [ ] No private absolute paths are required for readers.
 - [ ] Release, GitHub Pages, or article path is decided.
 - [ ] Post-release review is scheduled.
-
