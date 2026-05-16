@@ -25,6 +25,7 @@ AgentWorkOS 里的 Agent 必须先区分两条轴线：
 
 - 不把模型名当成任务角色。`cckimi` 不是“角色规划员”，它只是一个模型执行通道。
 - 不把任务角色绑定死在单一模型上。同一个 `role-planner` 可以由 Codex、Kimi、DeepSeek 或 Mimo 执行，取决于上下文长度、成本、速度和风险。
+- CC 系列 provider 默认使用各自最强模型；只有 DeepSeek 允许 `deepseek-v4-pro` 和 `deepseek-v4-flash` 双档，其他 provider 不静默降级。
 - 所有模型执行层委派都必须回到 Codex 当前模型复核：看输出、看 diff、跑验证、再决定是否接受。
 - `model_acess.txt` 只作为本机配置来源，不把密钥写入公开仓库、README、Skill 文档或长期记忆。
 

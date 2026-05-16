@@ -1,0 +1,4 @@
+interface:
+  display_name: "CC Mimo"
+  short_description: "Delegate selected work to Claude/Mimo, then audit with Codex"
+  default_prompt: "Use $ccmimo to delegate a bounded coding task to Claude with Mimo, then review the result with Codex."

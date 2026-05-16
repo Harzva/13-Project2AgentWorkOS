@@ -11,4 +11,5 @@ Default rule:
 - A task role is not tied to one model. It can run on Codex, Kimi, DeepSeek, Mimo, or another verified channel.
 - The actual working unit is `task role + model execution channel`.
 - Any offloaded model-layer run must return to Codex current model for audit: output, diff, commands, tests, and remaining risk.
+- For `cc*` provider skills, default to the strongest provider model; only DeepSeek has an allowed fast/cheap exception: `deepseek-v4-pro` by default and `deepseek-v4-flash` for low-risk triage.
 - Never put provider secrets from `model_acess.txt` into public repositories, README files, skill docs, screenshots, or long-term memories.

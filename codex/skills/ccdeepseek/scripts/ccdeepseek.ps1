@@ -2,6 +2,7 @@ param(
   [Parameter(Mandatory = $true)]
   [string]$Prompt,
 
+  [ValidateSet("deepseek-v4-pro", "deepseek-v4-flash")]
   [string]$Model = "deepseek-v4-pro",
   [string]$Cwd = (Get-Location).Path,
   [string]$OutputPath = "",
@@ -46,9 +47,14 @@ function Get-ClaudeSettingsPath([string]$ExplicitPath) {
     return (Resolve-Path -LiteralPath $ExplicitPath).Path
   }
 
-  $mimoPath = Join-Path $env:USERPROFILE ".claude\settings.deepseek.json"
-  if (Test-Path -LiteralPath $mimoPath) {
-    return (Resolve-Path -LiteralPath $mimoPath).Path
+  $deepseekFlashPath = Join-Path $env:USERPROFILE ".claude\settings.deepseek.flash.json"
+  if ($Model -eq "deepseek-v4-flash" -and (Test-Path -LiteralPath $deepseekFlashPath)) {
+    return (Resolve-Path -LiteralPath $deepseekFlashPath).Path
+  }
+
+  $deepseekPath = Join-Path $env:USERPROFILE ".claude\settings.deepseek.json"
+  if (Test-Path -LiteralPath $deepseekPath) {
+    return (Resolve-Path -LiteralPath $deepseekPath).Path
   }
 
   $defaultPath = Join-Path $env:USERPROFILE ".claude\settings.json"

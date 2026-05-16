@@ -237,10 +237,12 @@ Current self-experiment evidence:
 | Public source | Local target |
 |---|---|
 | `codex/skills/project2agentworkos/` | `<codex-home>/skills/project2agentworkos/` |
+| `codex/skills/ccmimo/` | `<codex-home>/skills/ccmimo/` |
 | `codex/skills/cckimi/` | `<codex-home>/skills/cckimi/` |
 | `codex/skills/ccdeepseek/` | `<codex-home>/skills/ccdeepseek/` |
 | `codex/memories/project2agentworkos.md` | `<codex-home>/memories/project2agentworkos.md` |
 | `codex/memories/agent-model-role-layers.md` | `<codex-home>/memories/agent-model-role-layers.md` |
+| `codex/memories/cc-provider-model-policy.md` | `<codex-home>/memories/cc-provider-model-policy.md` |
 | `codex/rules/project2agentworkos.rules` | `<codex-home>/rules/project2agentworkos.rules` |
 
 See [Codex Substrate And AgentWorkOS](./docs/CODEX_SUBSTRATE_AND_AGENTWORKOS.md) for the boundary between `.codex` and `AgentWorkOS`.

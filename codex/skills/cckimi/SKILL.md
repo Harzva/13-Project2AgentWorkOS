@@ -1,6 +1,6 @@
 ---
 name: cckimi
-description: Delegate bounded coding, long-context reading, documentation, refactor planning, log-triage, or repetitive implementation work from Codex to the local Claude Code CLI configured with Kimi/Moonshot, especially when the user mentions cckimi, Kimi, Moonshot, kimi-k2.6, kimi-k2-thinking, long context, cheaper/offloaded execution, or when Codex can save context by assigning a narrow task to Kimi. Always use the current Codex model to audit cckimi output, diffs, and verification before accepting or reporting the result.
+description: Delegate bounded coding, long-context reading, documentation, refactor planning, log-triage, or repetitive implementation work from Codex to the local Claude Code CLI configured with the best Kimi/Moonshot model, especially when the user mentions cckimi, Kimi, Moonshot, kimi-k2.6, long context, cheaper/offloaded execution, or when Codex can save context by assigning a narrow task to Kimi. Always use the current Codex model to audit cckimi output, diffs, and verification before accepting or reporting the result.
 ---
 
 # CC Kimi
@@ -29,8 +29,7 @@ Do not use cckimi for secrets, credentials, destructive operations, production d
 2. Snapshot local state first with `git status --porcelain` when working in a git repo.
 3. Run `scripts/cckimi.ps1` from this skill. Use read-only mode by default; add `-AllowEdits` only for a deliberately delegated code edit.
    - The wrapper prefers `C:\Users\<you>\.claude\settings.kimi.json` when present, then falls back to normal Claude `settings.json`.
-   - The default model id is `kimi-k2.6`.
-   - For deeper reasoning, pass `-Model kimi-k2-thinking` only when the task benefits from slower reasoning and Codex can still verify the result.
+   - The only allowed model id is `kimi-k2.6`.
 4. Read the wrapper output paths. Treat every cckimi run as `pending Codex review`.
 5. Codex must audit with the current Codex model before accepting the work:
    - inspect cckimi output
@@ -82,8 +81,8 @@ Mark reviewed after Codex audit:
 
 Reference the Kimi/Moonshot Agent/Claude Code support docs when provider behavior changes.
 
-- Use `kimi-k2.6` as the default general delegation model.
-- Use `kimi-k2-thinking` for analysis-heavy tasks that do not require immediate iteration.
+- Use `kimi-k2.6` as the default and only cckimi model.
+- Do not downgrade or switch to another Kimi model unless the provider's best model changes and the settings, wrapper, and skill docs are updated together.
 - Prefer cckimi when the task is context-heavy and the expected output is easy for Codex to check.
 - Keep prompts bounded: exact files, allowed edits, stop conditions, and required evidence.
 

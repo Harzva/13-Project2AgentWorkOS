@@ -2,8 +2,8 @@ param(
   [Parameter(Mandatory = $true)]
   [string]$Prompt,
 
-  [ValidateSet("kimi-k2.6")]
-  [string]$Model = "kimi-k2.6",
+  [ValidateSet("mimo-v2.5-pro")]
+  [string]$Model = "mimo-v2.5-pro",
   [string]$Cwd = (Get-Location).Path,
   [string]$OutputPath = "",
   [string]$SettingsPath = "",
@@ -47,9 +47,9 @@ function Get-ClaudeSettingsPath([string]$ExplicitPath) {
     return (Resolve-Path -LiteralPath $ExplicitPath).Path
   }
 
-  $kimiPath = Join-Path $env:USERPROFILE ".claude\settings.kimi.json"
-  if (Test-Path -LiteralPath $kimiPath) {
-    return (Resolve-Path -LiteralPath $kimiPath).Path
+  $mimoPath = Join-Path $env:USERPROFILE ".claude\settings.mimo.json"
+  if (Test-Path -LiteralPath $mimoPath) {
+    return (Resolve-Path -LiteralPath $mimoPath).Path
   }
 
   $defaultPath = Join-Path $env:USERPROFILE ".claude\settings.json"
@@ -170,7 +170,7 @@ function Write-RunRecord(
   $failureKind = Get-FailureKind $ExitCode $Stage $PreflightStatus $OutputText
 
   $meta = [pscustomobject]@{
-    tool = "cckimi"
+    tool = "ccmimo"
     model = $Model
     cwd = $resolvedCwd
     cwd_hash = $cwdHash
@@ -194,9 +194,9 @@ function Write-RunRecord(
 
   $meta | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath $MetaPath -Encoding UTF8
 
-  Write-Output "CCKIMI_OUTPUT=$OutputPath"
-  Write-Output "CCKIMI_PENDING_REVIEW=$MetaPath"
-  Write-Output "CCKIMI_EXIT_CODE=$ExitCode"
+  Write-Output "CCMIMO_OUTPUT=$OutputPath"
+  Write-Output "CCMIMO_PENDING_REVIEW=$MetaPath"
+  Write-Output "CCMIMO_EXIT_CODE=$ExitCode"
 }
 
 $resolvedCwd = (Resolve-Path -LiteralPath $Cwd).Path
@@ -205,7 +205,7 @@ Set-Location -LiteralPath $resolvedCwd
 $claudeCommand = Get-Command claude -ErrorAction Stop
 $resolvedSettingsPath = Get-ClaudeSettingsPath $SettingsPath
 $baseUrl = Get-ClaudeBaseUrl $resolvedSettingsPath
-$runRoot = Join-Path $env:USERPROFILE ".codex\cckimi-runs"
+$runRoot = Join-Path $env:USERPROFILE ".codex\ccmimo-runs"
 New-Item -ItemType Directory -Force -Path $runRoot | Out-Null
 
 $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
@@ -243,7 +243,7 @@ if (-not $SkipPreflight) {
 }
 
 $systemPrompt = @"
-You are cckimi, a delegated worker invoked by Codex.
+You are ccmimo, a delegated worker invoked by Codex.
 Use the configured Claude Code runtime with model $Model.
 Stay inside the bounded task. Keep output concise and evidence-oriented.
 For coding, refactor, tests, and troubleshooting tasks, prefer deterministic execution: make minimal changes, avoid creative alternatives unless asked, and do not invent evidence.
@@ -293,4 +293,3 @@ Write-RunRecord `
 if ($exitCode -ne 0) {
   exit $exitCode
 }
-

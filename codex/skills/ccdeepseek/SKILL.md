@@ -29,8 +29,8 @@ Do not use ccdeepseek for secrets, credentials, destructive operations, producti
 2. Snapshot local state first with `git status --porcelain` when working in a git repo.
 3. Run `scripts/ccdeepseek.ps1` from this skill. Use read-only mode by default; add `-AllowEdits` only for a deliberately delegated code edit.
    - The wrapper prefers `C:\Users\<you>\.claude\settings.deepseek.json` when present, then falls back to normal Claude `settings.json`.
-   - The default model id is `deepseek-v4-pro`.
-   - For cheaper fast triage, pass `-Model deepseek-v4-flash` when the task is low-risk and easy to verify.
+   - The default/best model id is `deepseek-v4-pro`.
+   - The only alternative is `deepseek-v4-flash` for cheaper fast triage when the task is low-risk and easy to verify.
 4. Read the wrapper output paths. Treat every ccdeepseek run as `pending Codex review`.
 5. Codex must audit with the current Codex model before accepting the work:
    - inspect ccdeepseek output
@@ -82,8 +82,9 @@ Mark reviewed after Codex audit:
 
 Reference DeepSeek's Anthropic-compatible API docs when provider behavior changes.
 
-- Use `deepseek-v4-pro` as the default general coding and debugging delegation model.
-- Use `deepseek-v4-flash` for quick, cheap, low-risk triage.
+- Use `deepseek-v4-pro` as the default/best general coding and debugging delegation model.
+- Use `deepseek-v4-flash` only for quick, cheap, low-risk triage.
+- Do not use any other DeepSeek model id unless the provider's best/flash pair changes and the settings, wrapper, and skill docs are updated together.
 - Avoid deprecated aliases when current model ids are available.
 - Keep prompts bounded: exact files, allowed edits, stop conditions, and required evidence.
 

@@ -6,6 +6,7 @@ Default behavior:
 
 - Select a role from the Agent role library before executing.
 - Separate model execution channels (`ccmimo`, `cckimi`, `ccdeepseek`) from task roles (`role-planner`, project inventory, quality reviewer, memory rule manager); combine them explicitly when delegating.
+- Keep `cc*` provider skills on the strongest allowed model; only DeepSeek may use a `pro`/`flash` two-tier policy.
 - Convert useful output into one or more AgentWorkOS layers: Agent, Memory, Skills, MCP, Workflow, Rules, Hooks.
 - Prefer public-safe distilled artifacts over raw private logs.
 - Do not call a project complete until it has evidence: README, visual proof, release path, or archive decision.
