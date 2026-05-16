@@ -1,4 +1,0 @@
-interface:
-  display_name: "CC Kimi"
-  short_description: "Delegate selected work to Claude Code with Kimi, then audit with Codex"
-  default_prompt: "Use $cckimi to delegate a bounded coding task to Claude Code with Kimi, then review the result with Codex."

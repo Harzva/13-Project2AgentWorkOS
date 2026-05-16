@@ -44,12 +44,8 @@
 
 ## Agent 协作规则
 
-- Agent 必须区分模型执行层和任务职责层：`ccmimo`、`cckimi`、`ccdeepseek` 是执行通道，`role-planner`、项目侦察、交付监督是任务角色。
-- 实际委派必须写成“任务角色 + 模型执行通道”，例如“角色规划员 + cckimi”。
-- CC 系列 provider 默认使用各自最强模型；只有 DeepSeek 允许 `deepseek-v4-pro` 和 `deepseek-v4-flash` 双档，其他 provider 不静默降级。
 - Agent 不能只给建议，必须产出文件、命令、清单或可验证结果。
 - 每次项目任务必须有执行 Agent 和验收 Agent。
-- 模型执行层产出的结果必须回到 Codex 当前模型复核后才能进入最终结论。
 - 同类失败第二次出现，必须调用记忆归档 Agent。
 - 新技能必须有 README、SKILL、示例、安装方式、验证方式。
 - Agent 输出的方案必须转成仓库文件，否则只是对话草稿。
