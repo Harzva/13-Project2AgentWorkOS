@@ -1,0 +1,4 @@
+interface:
+  display_name: "CC DeepSeek"
+  short_description: "Delegate selected work to Claude Code with DeepSeek, then audit with Codex"
+  default_prompt: "Use $ccdeepseek to delegate a bounded coding task to Claude Code with DeepSeek, then review the result with Codex."

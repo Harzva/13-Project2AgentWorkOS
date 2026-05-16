@@ -100,7 +100,23 @@ For each task, the system chooses:
 
 1. A **primary role** that owns the work.
 2. An optional **verifier role** that checks evidence, release quality, or memory extraction.
-3. A final **crystallization step** that turns useful work back into Agent, Memory, Skills, MCP, Workflow, Rules, or Hooks.
+3. A **model execution channel** when work should be delegated to a specific runtime such as `ccmimo`, `cckimi`, or `ccdeepseek`.
+4. A final **crystallization step** that turns useful work back into Agent, Memory, Skills, MCP, Workflow, Rules, or Hooks.
+
+Two axes are kept separate:
+
+| Axis | Question | Examples |
+|---|---|---|
+| Task role | What responsibility should this agent take? | Role Planner, Project Inventory Manager, Quality Reviewer |
+| Model execution channel | Which model/runtime should execute a bounded subtask? | `ccmimo`, `cckimi`, `ccdeepseek`, Codex current model |
+
+The practical rule is:
+
+```text
+task role + model execution channel = actual working agent
+```
+
+For example, `Role Planner + cckimi` can read a large role library and propose structure, while `Quality Reviewer + Codex current model` still owns final acceptance.
 
 The first public role set:
 
@@ -180,6 +196,8 @@ This project makes one rule explicit:
 | Local Codex self-install evidence | Added |
 | `.codex` substrate boundary doc | Added |
 | Hook boundary doc | Added |
+| Model-layer delegation skills: `cckimi`, `ccdeepseek` | Added |
+| Agent model-vs-role memory rule | Added |
 | Concept map image | Added to README |
 | Project card template | Added |
 | Thread distillation template | Added |
@@ -219,7 +237,10 @@ Current self-experiment evidence:
 | Public source | Local target |
 |---|---|
 | `codex/skills/project2agentworkos/` | `<codex-home>/skills/project2agentworkos/` |
+| `codex/skills/cckimi/` | `<codex-home>/skills/cckimi/` |
+| `codex/skills/ccdeepseek/` | `<codex-home>/skills/ccdeepseek/` |
 | `codex/memories/project2agentworkos.md` | `<codex-home>/memories/project2agentworkos.md` |
+| `codex/memories/agent-model-role-layers.md` | `<codex-home>/memories/agent-model-role-layers.md` |
 | `codex/rules/project2agentworkos.rules` | `<codex-home>/rules/project2agentworkos.rules` |
 
 See [Codex Substrate And AgentWorkOS](./docs/CODEX_SUBSTRATE_AND_AGENTWORKOS.md) for the boundary between `.codex` and `AgentWorkOS`.

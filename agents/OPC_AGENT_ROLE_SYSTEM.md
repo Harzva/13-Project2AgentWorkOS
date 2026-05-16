@@ -2,6 +2,32 @@
 
 用途：把项目推进从“一个 Agent 什么都做”拆成可复用角色，服务 Project2AgentWorkOS 的沉淀、萃取、结丹流程：从项目、对话和失败经验中提炼出 AgentWorkOS。
 
+## Agent 两层命名规则
+
+AgentWorkOS 里的 Agent 必须先区分两条轴线：
+
+- 模型执行层 Agent：回答“由哪个模型/运行时来执行”。例如 `ccmimo`、`cckimi`、`ccdeepseek`。这类 Skill 负责把一个小任务交给 Claude Code + 指定模型配置执行，并产出可审计结果。
+- 任务职责层 Agent：回答“这次任务要扮演什么职责”。例如 `role-planner`、项目侦察 Agent、交付监督 Agent、记忆归档 Agent。这类角色负责定义判断标准、输入输出和工作边界。
+
+默认组合方式：
+
+```text
+任务职责层角色 + 模型执行层通道 = 本次实际 Agent
+```
+
+示例：
+
+- `角色规划员 + cckimi`：适合读大量角色文档、整理角色库、提炼职责边界。
+- `环境与成本 Agent + ccdeepseek`：适合分析构建日志、成本路径、失败原因和低风险修复建议。
+- `交付监督 Agent + Codex 当前模型`：适合最终验收，因为必须由当前主 Agent 审计证据。
+
+强制规则：
+
+- 不把模型名当成任务角色。`cckimi` 不是“角色规划员”，它只是一个模型执行通道。
+- 不把任务角色绑定死在单一模型上。同一个 `role-planner` 可以由 Codex、Kimi、DeepSeek 或 Mimo 执行，取决于上下文长度、成本、速度和风险。
+- 所有模型执行层委派都必须回到 Codex 当前模型复核：看输出、看 diff、跑验证、再决定是否接受。
+- `model_acess.txt` 只作为本机配置来源，不把密钥写入公开仓库、README、Skill 文档或长期记忆。
+
 ## 调用原则
 
 - 新项目启动前：先调用项目侦察 Agent 和产品收敛 Agent。
